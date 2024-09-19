@@ -1,0 +1,190 @@
+/* Estilos para la imagen de fondo */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Imagen1.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Estilos para la capa de oscurecimiento */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    padding: 15px 30px;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para los botones del menú */
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.navbar-buttons button {
+    background-color: transparent;
+    color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Estilos adicionales para cuando el menú está en la posición fija */
+.navbar.scrolled {
+    background-color: black;
+}
+
+/* Estilos para el contenido */
+.content {
+    position: relative;
+    margin-top: 150px; /* Asegura suficiente espacio desde el menú */
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Estilos para el título "ACTIVIDADES" */
+.page-title {
+    margin: 30px 0; /* Ajusta la distancia */
+    text-align: center;
+    background-color: #A9A9A9; /* Color plomo */
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Estilos para las actividades */
+.activity {
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.activity h2 {
+    margin-top: 0;
+}
+
+/* Estilo para el divisor plomo */
+.divider {
+    height: 75px;
+    background-color: #A9A9A9; /* Color plomo */
+    margin: 50px 0; /* Espacio arriba y abajo del divisor */
+    width: 100%;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: orange; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: orange;
+}
+
+/* Estilos para el hover en los íconos */
+.social-icons a .fa-tiktok {
+    color: #69C9D0; /* Color de TikTok */
+}
+
+.social-icons a .fa-whatsapp {
+    color: #25D366; /* Color de WhatsApp */
+}
+
+.social-icons a .fa-facebook-f {
+    color: #1877F2; /* Color de Facebook */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .text-and-image {
+        flex-direction: column;
+    }
+
+    .text-and-image .intro-text, .text-and-image .intro-image {
+        margin: 0;
+    }
+
+    .intro-image img {
+        width: 100%;
+        height: auto;
+    }
+}

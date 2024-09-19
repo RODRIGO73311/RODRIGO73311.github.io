@@ -1,0 +1,126 @@
+/* Estilos para el video de fondo */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra el área sin deformarse */
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece el video */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    padding: 15px 30px; /* Más ancho */
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+
+.logo {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 30px; /* Ajusta la posición del logo */
+}
+
+/* Estilos para los botones del menú */
+.navbar-buttons {
+    display: flex;
+    gap: 20px; /* Espaciado entre botones */
+    margin-left: auto; /* Empuja los botones hacia la izquierda */
+}
+
+.navbar-buttons button {
+    background-color: transparent; /* Botones sin color de fondo */
+    color: orange; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+    background-color: orange; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para el botón activo (clicado) */
+.navbar-buttons button:active {
+    background-color: orange; /* Color de fondo cuando el botón es presionado */
+    color: white; /* Color del texto cuando el botón es presionado */
+}
+
+/* Estilos adicionales para cuando el menú está en la posición fija y cambia de color */
+.navbar.scrolled {
+    background-color: black; /* Color de fondo cuando se desplaza hacia abajo */
+}
+
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centra el texto */
+    color: white;
+    opacity: 1; /* Inicialmente invisible */
+    transition: opacity 5s ease; /* Transición de 2 segundos */
+}
+
+.centered-text h1 {
+    font-size: 56px; /* Tamaño grande para el título */
+    margin: 0; /* Elimina el margen del h1 */
+    font-weight: bold; /* Negrita para el título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */
+}
+
+.centered-text p {
+    font-size: 24px; /* Tamaño más pequeño para la ubicación */
+    margin: 10px 0 0; /* Margen superior para separar del título */
+    font-weight: normal; /* Normal para el texto de ubicación */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */
+}
+
+/* Clase para hacer visible el texto */
+.show-text {
+    opacity: 1; /* Hacer visible el texto */
+}
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .text-and-image {
+        flex-direction: column;
+    }
+
+    .text-and-image .intro-text, .text-and-image .intro-image {
+        margin: 0;
+    }
+
+    .intro-image img {
+        width: 100%;
+        height: auto;
+    }
+    

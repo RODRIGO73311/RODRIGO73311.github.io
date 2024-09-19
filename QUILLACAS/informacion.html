@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Información - Santuario de Quillacas</title>
+    <link rel="stylesheet" href="informacion.css">
+</head>
+<body>
+    <!-- Imagen de fondo y capa de oscurecimiento -->
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+
+    <!-- Barra de navegación -->
+    <nav id="navbar" class="navbar">
+        <div class="logo">Quillacas</div>
+        <div class="navbar-buttons">
+                <a href="index.html"><button>Inicio</button></a>
+                <a href="historia.html"><button>Historia</button></a>
+                <a href="actividades.html"><button>Actividades</button></a>
+                <a href="ubicacion.html"><button>Ubicación</button></a>
+            
+                <a href="informacion.html"><button>Más Información</button></a>
+              </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <!-- Título de la página -->
+        <div class="page-title">
+            <h1>AUTORIDADES</h1>
+        </div>
+
+        <!-- Sección de tarjetas -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('1.jpg');"></div>
+                    <div class="card-back">
+                        <p><h1>Erminia Mendoza Calizaya
+                            Mama Giliri</h1></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('2.jpg');"></div>
+                    <div class="card-back">
+                        <p><h1>Fredy Felix Montoya
+                            Hilajata mayor
+                            Aylu soraga</h1></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('3.jpg');"></div>
+                    <div class="card-back">
+                        <p><h1>Autoridad originaria
+                            Lucas Apudaca
+                            Hilakata mayor
+                            Ayllu mallcaco</h1></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('4.jpg');"></div>
+                    <div class="card-back">
+                        <p><h1>Ayllu mallcoca 
+                            Mama talla
+                            Veronica Montoya
+                            honofre</h1></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Santuario de Quillacas. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com" target="_blank" class="fa fa-tiktok"></a>
+                <a href="https://wa.me/00000000000" target="_blank" class="fa fa-whatsapp"></a>
+                <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook-f"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        window.addEventListener('load', function() {
+            const centeredText = document.querySelector('.centered-text');
+            setTimeout(() => {
+                centeredText.classList.add('show-text');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

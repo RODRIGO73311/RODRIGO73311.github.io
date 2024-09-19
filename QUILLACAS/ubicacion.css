@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: url('Imagen1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: brightness(0.7);
+}
+
+/* Barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    z-index: 1;
+}
+
+.logo {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-buttons button {
+    background-color: transparent;
+    color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Estilos para el contenido */
+.content {
+    position: relative;
+    margin-top: 150px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    backdrop-filter: brightness(1); /* Para que el contenido resalte sobre el fondo */
+}
+
+/* Estilos para el título "Ubicación" */
+.page-title {
+    margin: 30px 0;
+    text-align: center;
+    background-color: #A9A9A9;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 5px;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Estilos para la sección de texto y mapa */
+.text-and-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Estilos para el texto de la ubicación */
+.location-text {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.location-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el mapa */
+.map-container {
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilos para la sección "Cómo llegar" */
+.how-to-reach {
+    margin-top: 50px;
+}
+
+.how-to-reach h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.how-to-reach p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para el divisor plomo */
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: #A9A9A9;
+    margin: 50px 0;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+/* Estilos para los iconos sociales */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: orange;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .text-and-map {
+        flex-direction: column;
+    }
+}
